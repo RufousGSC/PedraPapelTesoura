@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pedra Papel Tesoura")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed6758a2f8003744b5371ea8a5a8319771d3cbab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ad0eb9b9705a69e0dbe835f61cb4592b2e0f33a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pedra Papel Tesoura")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pedra Papel Tesoura")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

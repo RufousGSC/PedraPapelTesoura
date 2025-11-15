@@ -10,6 +10,18 @@ namespace Computador
     public class IA
     {
       
+        Random random = new Random();
+
+        public string[] escolhaIA = new string[] { "Pedra", "Papel", "Tesoura" };
+        public string sorteio = "";
+
+
+        public string Receber()
+        {
+           this.sorteio = escolhaIA[random.Next(escolhaIA.Length)];
+
+            return sorteio;
+        }
 
 
 

@@ -12,13 +12,12 @@ while (ativo == true)
 {
     Console.WriteLine("Digite Uma Opção entre Pedra Papel e Tesoura: ");
     jogador.setEscolha(Console.ReadLine());
-
-    while (true)
-    {
-
+    ia.Receber();
+    Console.WriteLine(ia.sorteio);
 
 
-    }
+
+   
     
 }
 

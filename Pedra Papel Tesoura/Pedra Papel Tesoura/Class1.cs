@@ -9,18 +9,11 @@ namespace Player
 {
     public class Jogador : IA
     {
-        string Escolha = "";
-
-
-
-        public Jogador()
-        {
-
-        }
+        string Escolha = "";              
 
         public void setEscolha(string nome)
         {
-            Escolha = nome;
+            this.Escolha = nome;
             Console.WriteLine(Escolha);
         }
 
