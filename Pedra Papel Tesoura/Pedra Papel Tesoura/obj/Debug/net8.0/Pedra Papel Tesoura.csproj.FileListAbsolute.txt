@@ -12,3 +12,4 @@ C:\Users\rufou\Documents\Pedra Papel Tesoura\Pedra Papel Tesoura\Pedra Papel Tes
 C:\Users\rufou\Documents\Pedra Papel Tesoura\Pedra Papel Tesoura\Pedra Papel Tesoura\obj\Debug\net8.0\Pedra Papel Tesoura.pdb
 C:\Users\rufou\Documents\Pedra Papel Tesoura\Pedra Papel Tesoura\Pedra Papel Tesoura\obj\Debug\net8.0\Pedra Papel Tesoura.genruntimeconfig.cache
 C:\Users\rufou\Documents\Pedra Papel Tesoura\Pedra Papel Tesoura\Pedra Papel Tesoura\obj\Debug\net8.0\ref\Pedra Papel Tesoura.dll
+C:\Users\rufou\Documents\Pedra Papel Tesoura\Pedra Papel Tesoura\Pedra Papel Tesoura\obj\Debug\net8.0\Pedra Papel Tesoura.sourcelink.json

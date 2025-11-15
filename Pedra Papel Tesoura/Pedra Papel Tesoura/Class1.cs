@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computador;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,22 @@ using System.Threading.Tasks;
 
 namespace Player
 {
-    internal class Jogador
+    public class Jogador : IA
     {
+        string Escolha = "";
+
+
+
+        public Jogador()
+        {
+
+        }
+
+        public void setEscolha(string nome)
+        {
+            Escolha = nome;
+            Console.WriteLine(Escolha);
+        }
 
 
 
