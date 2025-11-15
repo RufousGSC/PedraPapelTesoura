@@ -13,8 +13,12 @@ namespace Player
 
         public void setEscolha(string nome)
         {
-            this.Escolha = nome;
-            Console.WriteLine(Escolha);
+            this.Escolha = nome;           
+        }
+
+        public string getEscolha()
+        {
+            return this.Escolha;
         }
 
 
