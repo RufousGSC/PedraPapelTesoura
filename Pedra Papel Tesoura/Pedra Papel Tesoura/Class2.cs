@@ -6,47 +6,40 @@ using System.Threading.Tasks;
 
 namespace Computador
 { 
-
     public class IA
     {      
         Random random = new Random();
         string[] escolhaIA = new string[] { "Pedra", "Papel", "Tesoura" };
         string sorteio = "";
-        int ganhar = 0;
-        int perder = 0;       
+        protected int ganhar = 0;
+        protected int perder = 0;       
 
         public void Receber()
         {
            this.sorteio = escolhaIA[random.Next(escolhaIA.Length)];           
         }
-
         public string getSorteio()
         {
             return this.sorteio;
         }
-
         public void vitoria()
         {
             this.ganhar++;
             Console.WriteLine("Vitoria\n");         
-        }     
-        
-        public string getGanhou()
-        {
-            if(ganhar >= 3)
-            {
-                return "ganhou";
-            }
-            return "";
-        }
-           
-
+        }           
         public void derrota()
         {
             this.perder++;
             Console.WriteLine("Perdeu\n");
         }
-
+        public string getGanhou()
+        {
+            if (ganhar >= 3)
+            {
+                return "ganhou";
+            }
+            return "";
+        }
         public string getPerdeu()
         {
             if (perder >= 3)
@@ -55,11 +48,5 @@ namespace Computador
             }
             return "";
         }
-
-
-
-
-
-
     }
 }
