@@ -2,7 +2,6 @@
 using Player;
 
 Jogador jogador = new Jogador();
-IA ia = new IA();
 bool ativo = true;
 string pedra = "Pedra";
 string papel = "Papel";
@@ -27,10 +26,10 @@ while (ativo == true)
 {
     Console.WriteLine("Digite Uma Opção entre Pedra Papel e Tesoura: ");
     jogador.setEscolha(Console.ReadLine());
-    ia.Receber();
+    jogador.Receber();
     Console.WriteLine("resultado: \n");
     escolhajogador = jogador.getEscolha(); // string - 
-    escolhaIA = ia.getSorteio(); // string - 
+    escolhaIA = jogador.getSorteio(); // string - 
     verificar = escolhajogador.Equals(escolhaIA, StringComparison.OrdinalIgnoreCase); //bool - pesquisei na internet para saber como comparava strings
     verificarjogadorPedra = escolhajogador.Equals(pedra, StringComparison.OrdinalIgnoreCase); //bool - Acho que daria pra tentar fazer usando um vetor
     verificarjogadorPapel = escolhajogador.Equals(papel, StringComparison.OrdinalIgnoreCase); //bool -
@@ -48,43 +47,43 @@ while (ativo == true)
     {
         if(verificarjogadorPedra == true && verificarIAPapel == false && verificarIATesoura == true)
         {
-            ia.vitoria();
+            jogador.vitoria();
             Console.WriteLine("Ganhou\n");
         }
 
         if(verificarjogadorPedra == true && verificarIAPapel == true && verificarIATesoura == false)
         {
-            ia.derrota();
+            jogador.derrota();
             Console.WriteLine("Perdeu\n");
         }
 
         if (verificarjogadorPapel == true && verificarIATesoura == false && verificarIAPedra == true)
         {
-            ia.vitoria();
+            jogador.vitoria();
             Console.WriteLine("Ganhou\n");
         }
 
         if (verificarjogadorPapel == true && verificarIATesoura == true && verificarIAPedra == false)
         {
-            ia.derrota();
+            jogador.derrota();
             Console.WriteLine("Perdeu\n");
         }
 
         if (verificarjogadorTesoura == true && verificarIAPedra == false && verificarIAPapel == true)
         {
-            ia.vitoria();
+            jogador.vitoria();
             Console.WriteLine("Ganhou\n");
         }
 
         if (verificarjogadorTesoura == true && verificarIAPedra == true && verificarIAPapel == false)
         {
-            ia.derrota();
+            jogador.derrota();
             Console.WriteLine("Perdeu\n");
         }
     }
 
-    ganhoupersonagem = ia.getGanhou();
-    perdeupersonagem = ia.getPerdeu();
+    ganhoupersonagem = jogador.getGanhou();
+    perdeupersonagem = jogador.getPerdeu();
     verificarperdeu = perdeu.Equals(perdeupersonagem, StringComparison.OrdinalIgnoreCase);
     verificarganhou = ganhou.Equals(ganhoupersonagem, StringComparison.OrdinalIgnoreCase);
 
